@@ -46,6 +46,9 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.21" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.29" />
           <element id="library" level="project" name="Maven: com.google.protobuf:protobuf-java:3.19.4" />
+          <element id="library" level="project" name="Maven: com.zaxxer:HikariCP:4.0.3" />
+          <element id="library" level="project" name="Maven: org.slf4j:slf4j-api:1.7.30" />
+          <element id="library" level="project" name="Maven: org.yaml:snakeyaml:1.30" />
         </element>
       </element>
       <element id="directory" name="META-INF">

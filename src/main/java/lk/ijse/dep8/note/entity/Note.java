@@ -15,7 +15,7 @@ public class Note implements SuperEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private int id;
     @Column(nullable = false)
     private String text;
     @JoinColumn(name = "user_id", referencedColumnName = "id", nullable = false)
