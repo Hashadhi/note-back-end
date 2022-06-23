@@ -1,6 +1,7 @@
 package lk.ijse.dep8.note.config;
 
 import lk.ijse.dep8.note.WebAppInitializer;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.config.YamlPropertiesFactoryBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -15,6 +16,12 @@ import java.util.Properties;
 @Configuration
 @Import(JPAConfig.class)
 public class WebRootConfig {
+
+
+    @Bean
+    public ModelMapper modelMapper() {
+        return new ModelMapper();
+    }
 
     @Bean
     public static YamlPropertiesFactoryBean yamlPropertiesFactory(ConfigurableEnvironment env) {
