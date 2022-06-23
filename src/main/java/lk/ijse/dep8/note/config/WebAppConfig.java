@@ -10,7 +10,7 @@ import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 
-//@EnableWebMvc
+@EnableWebMvc
 @Configuration
 @ComponentScan(basePackageClasses = WebAppInitializer.class)
 public class WebAppConfig {
