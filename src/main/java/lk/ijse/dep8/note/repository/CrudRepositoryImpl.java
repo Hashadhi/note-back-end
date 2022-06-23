@@ -37,7 +37,7 @@ public abstract class CrudRepositoryImpl <T extends SuperEntity, ID extends Seri
 
     @Override
     public Optional findById(Serializable pk) {
-        return Optional.of(entityManager.find(entityClzObj, pk));
+        return Optional.ofNullable(entityManager.find(entityClzObj, pk));
     }
 
     @Override
